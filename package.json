@@ -1,0 +1,29 @@
+{
+  "name": "ts-demo",
+  "version": "1.0.0",
+  "description": "proyecto TypeScript",
+  "main": "index.js",
+  "scripts": {
+    "tsNode": "cd src && ts-node index.ts",
+    "start": "nodemon",
+    "transpilation": "tsc",
+    "build:prod": "rimraf ./build && tsc",
+    "start:prod": "npm run build:prod && node build/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Opalo2289/ts-demo.git"
+  },
+  "author": "Guedys",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Opalo2289/ts-demo/issues"
+  },
+  "homepage": "https://github.com/Opalo2289/ts-demo#readme",
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "nodemon": "^2.0.20",
+    "rimraf": "^4.1.2",
+    "ts-node": "^10.9.1"
+  }
+}
